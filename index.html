@@ -1,0 +1,54 @@
+<body>
+
+<main>
+  <div class="dashboard-grid">
+
+    <!-- HEADER -->
+    <header>
+      <h1 id="greeting">Selamat datang!</h1>
+      <p id="datetime"></p>
+
+      <input type="text" id="usernameInput" placeholder="Masukkan nama...">
+      <button onclick="saveName()">Simpan Nama</button>
+
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+
+    <!-- TIMER -->
+    <section id="timer">
+      <h2>Focus Timer</h2>
+      <p id="time">25:00</p>
+
+      <button onclick="startTimer()">Start</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+    </section>
+
+    <!-- TASK -->
+    <section id="tasks">
+      <h2>Tasks</h2>
+
+      <input type="text" id="taskInput" placeholder="Tambah tugas...">
+      <button onclick="addTask()">Tambah</button>
+
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links">
+      <h2>Quick Links</h2>
+
+      <input type="text" id="linkName" placeholder="Nama link">
+      <input type="text" id="linkURL" placeholder="URL">
+
+      <button onclick="addLink()">Tambah</button>
+
+      <div id="linkList"></div>
+    </section>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
